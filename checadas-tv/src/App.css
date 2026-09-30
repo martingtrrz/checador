@@ -1,0 +1,38 @@
+/* checadas-tv — TV-specific global overrides */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #0F172A;
+  color: #F1F5F9;
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Prevent scrollbar from appearing on TV */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Safe-zone wrapper applied via .tv-safe class */
+.tv-safe {
+  padding: 60px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Focus ring utility for TV navigation */
+.tv-focus {
+  outline: 4px solid white;
+  outline-offset: 4px;
+  transform: scale(1.05);
+  transition: all 0.1s ease;
+}
+
+.tv-no-focus {
+  transition: all 0.1s ease;
+}
